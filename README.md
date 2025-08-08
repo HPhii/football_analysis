@@ -17,32 +17,6 @@ A comprehensive tool for processing and analyzing video footage, producing detai
 8. [Live Video Preview](#live-video-preview)
 9. [Tracking Data Storage](#tracking-data-storage)
 
-
-## ❓ How to Run
-
-
-### Clone the Repository:
-Clone the project repository to your local machine:
-```bash
-git clone https://github.com/mradovic38/football_analysis.git
-cd football_analysis
-```
-
-### Prerequisites
-- Ensure you have **Python 3.6 or later** installed.
-- Install the required packages using pip:
-```bash
-pip install -r requirements.txt
-```
-
-### Add Roboflow API Key:
-1. Create a file in the root directory named: `config.py`.
-2. Add the folowing in `config.py`: 
-```python
-ROBOFLOW_API_KEY = 'your_roboflow_api_key_here'
-```
-Replace the placeholder value with your actual Roboflow API key.
-
 ### Train the Models:
 Before running the analysis, you need to train the models. The training notebooks are located in the [models/train](models/train) subfolder. You will find two notebooks: [`object_detection_train.ipynb`](models/train/object_detection/object_detection_train.ipynb) and [`keypoints_detection_train.ipynb`](models/train/keypoints_detection/keypoints_detection_train.ipynb).
 
@@ -153,11 +127,3 @@ Save tracking information to JSON files for further analysis and record-keeping,
 
 This project is licensed under the [MIT License](LICENSE). However, it uses the YOLO11 models, which are licensed under the [AGPL-3.0 and Enterprise Licenses](https://www.ultralytics.com/license).
 
-
-## 📖 Resources
-
- - [Code In a Jiffy - Build an AI/ML Football Analysis system with YOLO, OpenCV, and Python](https://youtu.be/neBZ6huolkg?si=ZEgoreaHGE6YniXN)
- - [Roboflow - Football AI Tutorial: From Basics to Advanced Stats with Python](https://youtu.be/aBVGKoNZQUw?si=DEb1BbARQBrd87Ez)
- - [DonsetPG - narya](https://github.com/DonsetPG/narya)
- - [PiotrGrabysz - PitchGeometry](https://github.com/PiotrGrabysz/PitchGeometry) 
- - "Automatic Team Assignment and Jersey Number Recognition in Football Videos" by Ragd Alhejaily et al. (2022).
